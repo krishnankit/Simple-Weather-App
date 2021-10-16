@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="main-heading">Know Your Weather</h1>
+    <div class="container">
+      <h2 id="card-heading">Enter the city name</h2>
+      <input type="search" name="city" id="city" placeholder="Enter the city..." autofocus>
+      <button id="get-data" class="btn">Get Weather</button>
+      <div id="details">
+        <h2 id="city-name">City</h2>
+        <ul id="weather">
+          <li id="temperature" class="weather-item">
+            <h3>Temperature</h3>
+            <h1 class="forecast"></h1>
+            <p>°C</p>
+          </li>
+          <li id="humidity" class="weather-item">
+            <h3>Humidity</h3>
+            <h1 class="forecast"></h1>
+            <p>percent</p>
+          </li>
+          <li id="windspeed" class="weather-item">
+            <h3>Wind Speed</h3>
+            <h1 class="forecast"></h1>
+            <p>meter/sec</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
