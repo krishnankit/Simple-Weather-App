@@ -7,15 +7,12 @@ let windspeed;
 let humidity;
 var output = "";
 
-// API key: bfc7419b131261eed1acebb37cf82d1c
-// API url: api.openweathermap.org/data/2.5/weather?q={city name}&appid={bfc7419b131261eed1acebb37cf82d1c} 
-
 function getData() {
   if (cityName.value === "") {
     alert("Enter the city name");
     return;
   }
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid=0f00a6c644d9b05ad296586d8e490a70`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&units=metric&appid=YOUR_API_KEY`;
   fetch(url)
   .then(response => {if(response.status < 200 || response.status >= 300) {alert("CITY NOT SUPPORTED BY API")}; return response.json()})
   .then(data => {
